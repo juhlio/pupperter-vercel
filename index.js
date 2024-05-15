@@ -27,7 +27,7 @@ app.get("/api", async (req, res) => {
     let browser = await puppeteer.launch(options);
 
     let page = await browser.newPage();
-    await page.goto("https://www.essencialgeradores.com.br");
+    await page.goto("https://www.google.com.br");
     res.send(await page.title());
   } catch (err) {
     console.error(err);

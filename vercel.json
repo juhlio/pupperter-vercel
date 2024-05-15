@@ -1,9 +1,4 @@
 {
   "builds": [{ "src": "index.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "/index.js" }],
-  "functions": {
-    "inxex.js": {
-      "maxDuration": 60
-    }
-}
+  "routes": [{ "src": "/(.*)", "dest": "/index.js" }]
 }

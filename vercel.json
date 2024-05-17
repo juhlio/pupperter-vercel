@@ -1,13 +1,5 @@
 {
   "builds": [{ "src": "index.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "/index.js" }],
- 
-    "functions": {
-      "/api": {
-        "timeout": 30000 
-      }
-    }
-
-  
+  "routes": [{ "src": "/(.*)", "dest": "/index.js" }] 
   
 }

@@ -1,7 +1,5 @@
 {
-  "functions": {
-    "/api": {
-      "timeout": 30000 
-    }
-  }
+  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/index.js" }]
+  
 }
